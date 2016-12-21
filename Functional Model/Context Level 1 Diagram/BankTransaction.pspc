@@ -1,0 +1,9 @@
+increase_credit(orderer_id, amount) {
+    orderer =  User.find(orderer_id);
+    transacted_amount = make_bank_transaction(amount);
+    if(transacted_amount == amount) {
+        return True;
+    } else {
+        return False;
+    }
+}
