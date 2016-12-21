@@ -1,0 +1,8 @@
+getActivityReport(start_date, end_date, UID, reportType){
+	if(reportType == increase){
+		result = IncreaseCreditReport.findMatching(UID, start_date, end_date);
+	} else {
+		result = TransportCreditReport.findMatching(UID, start_date, end_date);
+	}
+	return result;
+}

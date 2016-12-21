@@ -1,0 +1,6 @@
+getFoodSchedule(UID, week_start_date, week_end_date){
+	u = User.find(UID);
+	g = u.gender;
+	result = Serve.findMatching(UID, start_week_date, end_week_date, g);
+	return result;
+}
