@@ -1,5 +1,5 @@
-cancelFood(UID, date, meal){
-	r = Reserve.find(UID, date, meal);
+cancelFood(UID, serve_date, meal){
+	r = Reserve.find(UID, serve_date, meal);
 	if(r == null){
 		return("unsuccessful");
 	} else {
