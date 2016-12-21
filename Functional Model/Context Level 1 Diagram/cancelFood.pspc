@@ -1,0 +1,9 @@
+cancelFood(UID, date, meal){
+	r = Reserve.find(UID, date, meal);
+	if(r == null){
+		return("unsuccessful");
+	} else {
+		Reserve.delete(r);
+		return("unsuccessful");	
+	}
+}
