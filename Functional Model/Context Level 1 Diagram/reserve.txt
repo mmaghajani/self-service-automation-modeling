@@ -1,0 +1,7 @@
+reserve(UID,serve_date,meal){
+is_done = Reserve.insert(UID,serve_date,meal);
+if( is_done )
+return("successful");
+else
+reutrn("fail");
+}
