@@ -1,0 +1,14 @@
+transfer_credit(src_id, dest_id, amount) {
+    src = User.find(src_id);
+    dst = User.find(dest_id);
+    if(src.credit < amount) {
+        return false;
+    } else {
+        src.credit -= amount;
+        dst.credit += amount;
+        src.save();
+        dst.save();
+        return true;
+    }
+
+}
