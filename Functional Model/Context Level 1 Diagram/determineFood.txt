@@ -1,0 +1,8 @@
+determine_food(foodName,price){
+	Food.insertFood(foodName,price,false);
+	if (Food.has(foodName)){
+		return (“done!”);
+	} else {
+		return (“failed to do so!”);
+	}	
+}
