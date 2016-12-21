@@ -1,0 +1,8 @@
+make_bank_transaction(amount) {
+    transacted = transact(amount)
+    if(transacted == amount) {
+        return true;
+    } else {
+        return false;
+    }
+}
