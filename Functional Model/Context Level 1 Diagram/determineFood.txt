@@ -1,8 +1,10 @@
 determine_food(foodName,price){
-	Food.insertFood(foodName,price,false);
-	if (Food.has(foodName)){
-		return (“done!”);
+	f = Food.find(foodName);
+	if(f == null){
+		Food.insertFood(foodName,price,false);
+		return ("new food inserted successfully");
 	} else {
-		return (“failed to do so!”);
-	}	
+		Food.updateFood(foodName,price,false);
+		return ("food updated successfully");
+	}
 }
