@@ -5,5 +5,4 @@ determine_food_paln(){
 	} else {
 		return (“failed to do so!”);
 	}
-	
 }
