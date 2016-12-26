@@ -1,11 +1,11 @@
-increase_credit(orderer_id, amount) {
-    orderer =  User.find(orderer_id);
-    transacted_money = make_bank_transaction(amount);
-    if(transacted_money == amount) {
-        orderer.credit += amount;
-        orderer.save();
-        return True;
-    } else {
-        return False;
-    }
+increase_credit(UID, credit) {
+    u =  User.find(UID);
+	bool = make_bank_transaction(credit);
+	if(bool){
+		User.update(UID, credit);
+		result = IncreaseCreditLog.create(UID, credit);
+		return ("successful");
+	} else {
+		return ("unsuccessful");
+	}
 }

@@ -10,5 +10,4 @@ transfer_credit(src_id, dest_id, amount) {
         dst.save();
         return true;
     }
-
 }

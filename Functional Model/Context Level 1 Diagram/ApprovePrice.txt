@@ -1,11 +1,13 @@
-approve_food_price(foodName,price){
-	foodPrice = Food.findPrice(foodName);
-	if(isExist){
-		appropriatePrice = getAppropriatePrice(foodName);
-		if(appropriatePrice >= foodPrice){
-			Food.updateApproved(foodName);
+approve_food_price(listOfFoodRequests[]){
+	foodPrices = Food.findPrice(listOfFoodRequests[]);
+	foreach(food : listOfFoodRequests){
+		if(Exist){
+			appropriatePrice = getAppropriatePrice(foodName);
+			if(appropriatePrice == foodPrice){
+				Food.updateApproved(foodName);
+			}
+		} else {
+			return false;
 		}
-	else{
-		return false;
 	}
 }
