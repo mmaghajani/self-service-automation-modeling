@@ -1,9 +1,0 @@
-registerUser(UID, password, name, gender){
-	u = User.find(UID);
-	if(u == null){
-		User.insert(UID, password, name, gender);
-		return("successfully registered");
-	} else {
-		return("user exists!");
-	}
-}

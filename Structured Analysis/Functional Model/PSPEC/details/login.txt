@@ -1,7 +1,0 @@
-login ( UID , password ){
-	valid = User.find ( UID , password );
-	if (valid)
-		return ("successful") ;
-	else 
-		return ("fail") ;
-}

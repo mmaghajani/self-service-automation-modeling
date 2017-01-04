@@ -1,8 +1,0 @@
-determine_food_paln(){
-	Serve.insertFood(foodName,date,meal);
-	if (Food.has(foodName)){
-		return (“done!”);
-	} else {
-		return (“failed to do so!”);
-	}
-}

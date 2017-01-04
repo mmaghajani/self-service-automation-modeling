@@ -1,4 +1,0 @@
-food_statistics_search( meal , serve_date, gender){
-	reserve_table = Reserve.findMatching(meal , serve_date, gender);
-	retuen ( reserve_table );
-}

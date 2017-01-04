@@ -1,8 +1,0 @@
-logout(UID){
-	u = User.find(UID);
-	if(u == null){
-		return("logout unsuccessful!");
-	} else {
-		return("logout successful!");		
-	}
-}

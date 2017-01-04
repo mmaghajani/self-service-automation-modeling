@@ -1,4 +1,0 @@
-get_food_statistics( serve_date, meal , gender ){
-	food_status_table = Serve.findMatching( serve_date, meal , gender );
-	return ( food_status_table );
-}
